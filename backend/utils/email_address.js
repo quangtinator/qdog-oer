@@ -1,5 +1,5 @@
 exports.EMAIL = {
-    INTRUCTOR_EMAIL: '',
+    INTRUCTOR_EMAIL: 'quang.phung@rwth-aachen.de',
     REPORT_SENDER_EMAIL: 'testrwth1@outlook.com',
     REPORT_SENDER_PASSWORD: 'qwe123rwth',
     CERTIFICATE_SENDER_EMAIL: 'testrwth2@outlook.com',
