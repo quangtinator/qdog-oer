@@ -20,6 +20,9 @@ the certificates respectively (1 email for both could be an option but not recom
 The default value is (0 13 * * 1), which indicates that the cronjob should run everyweek on Monday at 1:00 PM. This value can be adapted to align with the workshop. It can also be set to ( * * * * * ) for example in testing phase, which make it run every single minute. However, setting this may result in the following spamming email problem.
 See more details: https://www.digitalocean.com/community/tutorials/nodejs-cron-jobs-by-examples
 
+DISCLAMER: Please check the timezone of your system before setting up the time, because it will always run on the time zone of the server that host this web-app.
 
 ********Regarding the spamming email problem********
-There is a known problem when sending too many emails in a short amount of time, the email addresses can be marked as spam and blocked by some popular email service like Google, Outlook, etc. The workaround is to replace them with new email accounts. Another approach could be to use the email server from university, which will probably require some configurations like DomainKeys Identified Mail(DKIM), SenderID, Email signature, etc to avoid this problem. Currently I'm not the email server admin and do not have access to those configurations so no test with the server has been run at this point. 
+There is a known problem when sending too many emails in a short amount of time, the email addresses can be marked as spam and blocked by some popular email service like Google, Outlook, etc. The error should look like this in the back-end log: "...STOREDRV.Submission.Exception:OutboundSpamException...".
+
+The workaround is to replace them with new email accounts. Another approach could be to use the email server from university, which will probably require some configurations like DomainKeys Identified Mail(DKIM), SenderID, Email signature, etc to avoid this problem. Currently I'm not the email server admin and do not have access to those configurations so no test with the server has been run at this point. 
