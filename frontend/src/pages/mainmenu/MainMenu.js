@@ -145,7 +145,7 @@ function MainMenu() {
             <Grid container item direction={'column'} xs={10} spacing={3} className={styles.mainmenu_container}>
                 <Grid container item justify={'center'}>
                     <Grid item xs={6} md={5}>
-                        <Button className={styles.button} fullWidth onClick={click_on_play}>Test</Button>
+                        <Button className={styles.button} fullWidth onClick={click_on_play}>Play</Button>
                     </Grid>
                 </Grid>
 
