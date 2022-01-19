@@ -407,7 +407,7 @@ const clearReport = () => {
     fs.writeFile('report.csv', '', function(){console.log('Report cleared!!')})
 }
 
-cron.schedule('0 9 * * 1', () => {
+cron.schedule('0 9 15 * *', () => {
     console.log('---------------------');
     console.log('Running Cron Job');
     writeReport();
